@@ -1,13 +1,13 @@
 import React from 'react';
 
 const AboutMe = () => {
-  const logo = process.env.PUBLIC_URL + '/logo512.png'
+  const logo = process.env.PUBLIC_URL + '/about.svg'
   return (
-    <div className="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-20">
+    <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26 lg:mt-20">
       <div className="relative">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-4 lg:items-center">
-          <div className="lg:col-start-2 lg:max-w-2xl ml-auto mr-auto">
-            <h2 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
+          <div className="ml-auto mr-auto lg:col-start-2 lg:max-w-2xl">
+            <h2 className="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
               Yassine Najem
             </h2>
             <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
@@ -15,15 +15,10 @@ const AboutMe = () => {
             </p>
 
           </div>
-          <div className="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
+          <div className="relative mt-20 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">
             <div className="relative space-y-4">
-              <div className="flex items-end justify-center lg:justify-start space-x-4">
-                <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={logo} alt="1" />
-                <img className="rounded-lg shadow-lg w-40 md:w-64" width="260" src={logo} alt="2" />
-              </div>
-              <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                <img className="rounded-lg shadow-lg w-24 md:w-40" width="170" src={logo} alt="3" />
-                <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={logo} alt="4" />
+              <div className="flex items-start justify-center ml-20 space-x-4 lg:justify-start">
+                <img className=" md:w-96" width="400" src={logo} alt="main avatar" />
               </div>
             </div>
           </div>
