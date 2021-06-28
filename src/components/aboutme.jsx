@@ -1,7 +1,8 @@
 import React from 'react';
+import logo from '../assets/developer.gif'
 
 const AboutMe = () => {
-  const logo = process.env.PUBLIC_URL + '/about.svg'
+
   return (
     <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26 lg:mt-20">
       <div className="relative">
