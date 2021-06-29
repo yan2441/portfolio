@@ -9,8 +9,8 @@ import mysql from "../assets/skills/mysql-6.svg"
 import java from "../assets/skills/java.svg"
 
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-
   html,
   css,
   node,
