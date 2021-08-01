@@ -6,7 +6,7 @@ import express from "../assets/skills/express.svg"
 import tailcss from "../assets/skills/tailwindcss-icon.svg"
 import mongo from "../assets/skills/mongodb.svg"
 import mysql from "../assets/skills/mysql-6.svg"
-import java from "../assets/skills/java.svg"
+
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -18,7 +18,5 @@ export default {
   react,
   tailcss,
   mongo,
-  mysql,
-  java
-
+  mysql
 }
