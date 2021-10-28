@@ -5,7 +5,7 @@ const Projects = () => {
     <div className="text-blueGray-700 ">
       <div className="container items-center px-5 py-8 mx-auto lg:px-24">
         <h2 className="text-2xl font-bold text-blue-600">Projects</h2>
-        {/* cards container */}
+        {/* cards container effect*/}
         <div className="flex flex-wrap mb-12 text-left">
           {/* project card */}
           <div className="w-full p-6 mx-auto lg:w-1/3">
