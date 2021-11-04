@@ -10,7 +10,7 @@ const Projects = () => {
         {/* cards container effect*/}
         <div className="flex flex-wrap mb-12 text-left">
           {/* project card */}
-          {projects.map((item) => <ProjectCard item={item} />)}
+          {projects.map((item) => <ProjectCard key={item.id} item={item} />)}
           {/* project card */}
         </div>
       </div>

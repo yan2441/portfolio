@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 gap-16 text-center lg:grid-cols-8">
           {
             Object.entries(logos).map(([key, value]) => {
-              return <div className="flex items-center justify-center ">
+              return <div key={key} className="flex items-center justify-center ">
                 <img src={value} key={key} alt={key} className="block object-contain h-16 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 "></img>
               </div>
             })
