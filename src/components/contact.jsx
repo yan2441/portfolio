@@ -12,7 +12,7 @@ const Contact = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const res = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+		await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
 		e.target.reset();
 	}
 
