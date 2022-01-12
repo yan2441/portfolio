@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import SocialMedia from './SocialMedia';
 
 
 const NavBar = () => {
   const [menuButton, setMenuButton] = useState(true)
   return (
-    <div>
-      <nav className="bg-white shadow dark:bg-gray-800">
+    <div className='relative'>
+      <nav className="bg-white shadow dark:bg-gray-800 sticky">
         <div className="container px-6 py-4 mx-auto">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex items-center justify-between">
@@ -23,17 +24,15 @@ const NavBar = () => {
               </div>
             </div>
 
-            <div /* className="flex-1 md:flex md:items-center md:justify-between" */ className={`items-center md:flex ${menuButton ? "hidden" : ""}`}>
+            <div /* className="flex-1 md:flex md:items-center md:justify-between" */ className={` items-center md:flex ${menuButton ? "hidden" : ""}`}>
               <div className="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
-                <a href="/" className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">About me</a>
-                <a href="/" className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Projects</a>
-                <a href="/" className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Contact</a>
-                <a href="/" className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Resume</a>
+                <a href="/" className="px-5 py-2 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-2xl md:mt-0 hover:bg-gray-300">About me</a>
+                <a href="/" className="px-5 py-2 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-2xl md:mt-0 hover:bg-gray-300">Projects</a>
+                <a href="/" className="px-5 py-2 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-2xl md:mt-0 hover:bg-gray-200">Contact</a>
+                <a href="/" className="px-5 py-2 mx-2 mt-2 mb-4 md:mb-0 text-lg text-white font-medium transition-colors duration-200 transform rounded-2xl md:mt-0 bg-blue-700 hover:bg-blue-300 hover:text-gray-700">Resume</a>
               </div>
+              <SocialMedia size={30} />
 
-              <div className="flex items-center mt-4 md:mt-0">
-
-              </div>
             </div>
           </div>
         </div>
